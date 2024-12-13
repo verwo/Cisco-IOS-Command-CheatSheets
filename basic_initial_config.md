@@ -25,7 +25,7 @@ Command|Additional Notes
 |-----------------------------------|-------------------------------------------------------------|
 | `CDevice(config)#enable secret s8cr8t 0` | Set enable password (encrypted privileged EXEC password) to `s8cr8t` |
 | `CDevice(config)#line console 0`<br>`CDevice(config-line)#password p@ssw0rd` | Set console password to `p@ssw0rd`                          |
-| `CDevice(config)#security password min-length 8` | c.	Set minimum password length to 8                             |
+| `CDevice(config)#security password min-length 8` | Set minimum password length to 8                             |
 | `CDevice(config)#service password-encryption` | Encrypt all plaintext passwords
 
 
