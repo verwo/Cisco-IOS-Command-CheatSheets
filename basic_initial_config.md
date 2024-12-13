@@ -12,8 +12,9 @@ Command|Additional Notes
 ``CDevice#configure terminal``|
 ``CDevice(config)#no ip domain-lookup``|disable DNS lookup
 ``CDevice(config)#cdp run``|ensure CDP is running :bulb:(although it is running on Cisco devices by default)
-``CDevice(config)#line console 0``|
 ``CDevice(config)#banner motd $ message $``| set banner
+``CDevice(config)#line console 0``|
+``CDevice(config-line)#password p@ssw0rd``| set console password to 'p@ssw0rd'
 ``CDevice(config-line)#logging synchronous``|
 ``CDevice(config-line)#history size [lines]``|specify the size (number of lines) for the history of executed commands (you can view your history with ``R1#show history``)
 ``CDevice(config-line)#exec-timeout [minutes] [seconds]``|
