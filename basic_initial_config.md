@@ -1,6 +1,6 @@
-# Basic device configuration 
-
 Note: These commands work on both Cisco routers and switches.
+
+## Basic device configuration 
 
 Command|Additional Notes
 ---|---
