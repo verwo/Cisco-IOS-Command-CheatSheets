@@ -21,12 +21,11 @@ Command|Additional Notes
 
 # Security settings
 
-Command|Additional Notes
----|---
-``CDevice(config)#enable secret s8cr8t 0``| set enable password (encrypted privileged EXEC password) to s8cr8t
-``CDevice(config)#line console 0``|
-``CDevice(config)#service password-encryption``| Encrypt all plaintext passwords
-``CDevice(config-line)#password p@ssw0rd``| set console password to 'p@ssw0rd'
+| Command                           | Additional Notes                                              |
+|-----------------------------------|-------------------------------------------------------------|
+| `CDevice(config)#enable secret s8cr8t 0` | Set enable password (encrypted privileged EXEC password) to `s8cr8t` |
+| `CDevice(config)#line console 0<br>CDevice(config-line)#password p@ssw0rd` | Set console password to `p@ssw0rd`                          |
+| `CDevice(config)#service password-encryption` | Encrypt all plaintext passwords  
 
 
 
