@@ -33,14 +33,14 @@ Command|Additional Notes
 ## Configuring SSH
 Command|Description
 ---|---
-| `CDevice#show ip ssh``|Use it to verify that the switch supports SSH
-| `CDevice(config)#ip domain-name [domain-name]``|
-| `CDevice(config)#crypto key generate rsa general-keys modulus 4096``| Generate an RSA crypto key using 4096 bits modulus
-| `CDevice(config)#username [admin] secret [ccna]``|
+| `CDevice#show ip ssh`|Use it to verify that the switch supports SSH
+| `CDevice(config)#ip domain-name [domain-name]`|
+| `CDevice(config)#crypto key generate rsa general-keys modulus 4096`| Generate an RSA crypto key using 4096 bits modulus
+| `CDevice(config)#username [admin] secret [ccna]`|
 | `CDevice(config)#username user secret cisco` | Create user 'user' with password 'cisco'
 | `CDevice(config)#line vty 0 15`<br>`CDevice(config-line)#login local`<br>`CDevice(config-line)#transport input ssh`<br>`CDevice(config-line)#exit`  | Configure the vty lines to accept SSH access only
-| `CDevice(config)##ip ssh version 2``|enable SSH version 2
-| `CDevice(config)##crypto key zeroise rsa``|:warning: use to **delete** RSA key pair
+| `CDevice(config)##ip ssh version 2`|enable SSH version 2
+| `CDevice(config)##crypto key zeroise rsa`|:warning: use to **delete** RSA key pair
 
 ### Modifying SSH configuration
 Command|Description
