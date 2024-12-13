@@ -1,4 +1,4 @@
-# Basic initial device configuration 
+# Basic device configuration 
 
 You might find convenient to execute the following sequence of commands before doing any other configuration or troubleshooting tasks on your Cisco device, in order to improve your workflow on the terminal.
 
