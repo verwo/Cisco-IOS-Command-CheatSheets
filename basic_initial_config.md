@@ -30,8 +30,6 @@ Command|Additional Notes
 | `CDevice(config)#security password min-length 8` | Set minimum password length to 8                             |
 | `CDevice(config)#service password-encryption` | Encrypt all plaintext passwords
 | `CDevice(config)#username user secret cisco` | Create user 'user' with password 'cisco'
-| `CDevice(config)#line vty 0 15`<br>`CDevice(config-line)#login local`<br>`CDevice(config-line)#transport input ssh`  | Configure the vty lines to accept SSH access only
-
 
 ---
 ## Configuring SSH
