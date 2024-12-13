@@ -16,8 +16,6 @@
     - [VLAN troubleshooting](#troubleshooting-vlans)
     - [Trunk link troubleshooting](#troubleshooting-trunks)
     - [Voice VLANs](#voice-vlans)
-- [Configuring SSH](#configuring-ssh)
-- [Modifying SSH configuration](#modifying-ssh-configuration)
 - [Port Security](#port-security)
     - [Configuring Dynamic Port Security](#closed_lock_with_key-configuring-dynamic-port-security)
     - [Configuring Sticky Port Security](#closed_lock_with_key-configuring-sticky-port-security)
@@ -192,34 +190,6 @@ Command|Description
 ``S1(config-if)#switchport access vlan [vlan-id]``|
 ``S1(config-if)#mls qos trust cos``|set trusted state of an interface and indicate which packet fields are used to classify traffic
 ``S1(config-if)#switchport voice vlan [vlan-id]``|assign a voice VLAN to that port
-
-
-
-
----
-## Configuring SSH
-Command|Description
----|---
-``S1#show ip ssh``|Use it to verify that the switch supports SSH
-``S1(config)#ip domain-name [domain-name]``|
-``S1(config)#crypto key generate rsa``|
-``S1(config)#username [admin] secret [ccna]``|
-``S1(config)#line vty 0 15``|
-``S1(config-line)#transport input ssh``|
-``S1(config-line)#login local ``|
-``S1(config-line)#exit``|
-``S1(config)#ip ssh version 2``|enable SSH version 2
-``S1(config)#crypto key zeroise rsa``|:warning: use to **delete** RSA key pair
-
-### Modifying SSH configuration
-Command|Description
----|---
-``S1(config)#ip ssh time-out [time]``|Change timeout setting (time in seconds)
-``S1(config)#ip ssh authentication-retries [retries]``|Change number of allowed authentication attempts
-
-Verify your newly configured settings with ``S1#show ip ssh``
-
-
 
 ---
 ## Port Security
