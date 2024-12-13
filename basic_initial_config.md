@@ -46,6 +46,7 @@ Command|Description
 
 Verify your newly configured settings with ``S1#show ip ssh``
 
+--
 
 You can copy the same sequence, contained in the text box below, and paste it in your Cisco device, whether it is a real-world physical Cisco device, or a simulated device in an environment like Packet Tracer.  
 :bulb: Note that the commands below are abbreviated. Still. They should work just fine.  
