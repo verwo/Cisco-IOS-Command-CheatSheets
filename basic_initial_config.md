@@ -1,4 +1,4 @@
-# A recommended basic initial device configuration 
+# Basic initial device configuration 
 
 You might find convenient to execute the following sequence of commands before doing any other configuration or troubleshooting tasks on your Cisco device, in order to improve your workflow on the terminal.
 
@@ -13,13 +13,22 @@ Command|Additional Notes
 ``CDevice(config)#no ip domain-lookup``|disable DNS lookup
 ``CDevice(config)#cdp run``|ensure CDP is running :bulb:(although it is running on Cisco devices by default)
 ``CDevice(config)#banner motd $ message $``| set banner
-``CDevice(config)#line console 0``|
-``CDevice(config-line)#password p@ssw0rd``| set console password to 'p@ssw0rd'
 ``CDevice(config-line)#logging synchronous``|
 ``CDevice(config-line)#history size [lines]``|specify the size (number of lines) for the history of executed commands (you can view your history with ``R1#show history``)
 ``CDevice(config-line)#exec-timeout [minutes] [seconds]``|
 ``CDevice(config-line)#end``|exit to EXEC privileged mode, where the next command will be executed
 ``CDevice#copy running-config startup-config``|Saves the running configuration to the NVRAM
+
+# Security settings
+
+Command|Additional Notes
+---|---
+``CDevice(config)#enable secret s8cr8t 0``| set enable password (encrypted privileged EXEC password) to s8cr8t
+``CDevice(config)#line console 0``|
+``CDevice(config)#service password-encryption``| Encrypt all plaintext passwords
+``CDevice(config-line)#password p@ssw0rd``| set console password to 'p@ssw0rd'
+
+
 
 You can copy the same sequence, contained in the text box below, and paste it in your Cisco device, whether it is a real-world physical Cisco device, or a simulated device in an environment like Packet Tracer.  
 :bulb: Note that the commands below are abbreviated. Still. They should work just fine.  
