@@ -15,7 +15,6 @@ Command|Additional Notes
 ``CDevice(config)#banner motd $ message $``| set banner
 ``CDevice(config-line)#logging synchronous``|
 ``CDevice(config-line)#history size [lines]``|specify the size (number of lines) for the history of executed commands (you can view your history with ``R1#show history``)
-``CDevice(config)#ip domain-name example.com``|Set domain name to example.com
 ``CDevice(config-line)#exec-timeout [minutes] [seconds]``|
 ``CDevice(config-line)#end``|exit to EXEC privileged mode, where the next command will be executed
 ``CDevice#copy running-config startup-config``|Saves the running configuration to the NVRAM
