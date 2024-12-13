@@ -30,7 +30,6 @@ Command|Additional Notes
 | `CDevice(config)#service password-encryption` | Encrypt all plaintext passwords
 | `CDevice(config)#username user secret cisco` | Create user 'user' with password 'cisco'
 
----
 ## Configuring SSH
 Command|Description
 ---|---
