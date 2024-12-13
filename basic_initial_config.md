@@ -15,6 +15,7 @@ Command|Additional Notes
 ``CDevice(config)#banner motd $ message $``| set banner
 ``CDevice(config-line)#logging synchronous``|
 ``CDevice(config-line)#history size [lines]``|specify the size (number of lines) for the history of executed commands (you can view your history with ``R1#show history``)
+``CDevice(config)#ip domain-name example.com``|Set domain name to example.com
 ``CDevice(config-line)#exec-timeout [minutes] [seconds]``|
 ``CDevice(config-line)#end``|exit to EXEC privileged mode, where the next command will be executed
 ``CDevice#copy running-config startup-config``|Saves the running configuration to the NVRAM
@@ -27,6 +28,9 @@ Command|Additional Notes
 | `CDevice(config)#line console 0`<br>`CDevice(config-line)#password p@ssw0rd` | Set console password to `p@ssw0rd`                          |
 | `CDevice(config)#security password min-length 8` | Set minimum password length to 8                             |
 | `CDevice(config)#service password-encryption` | Encrypt all plaintext passwords
+| `CDevice(config)#username user secret cisco` | Create user 'user' with password 'cisco'
+| `CDevice(config)#line vty 0 15`<br>`CDevice(config-line)#login local`<br>`CDevice(config-line)#transport input ssh`  | Configure the vty lines to accept SSH access only
+| `CDevice(config)#crypto key generate rsa general-keys modulus 4096`  | e.	Generate an RSA crypto key using 4096 bits modulus
 
 
 
