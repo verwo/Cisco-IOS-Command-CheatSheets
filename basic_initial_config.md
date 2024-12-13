@@ -35,21 +35,21 @@ Command|Additional Notes
 ## Configuring SSH
 Command|Description
 ---|---
-| `S1#show ip ssh``|Use it to verify that the switch supports SSH
-| `S1(config)#ip domain-name [domain-name]``|
-| `S1(config)#crypto key generate rsa general-keys modulus 4096``| Generate an RSA crypto key using 4096 bits modulus
-| `S1(config)#username [admin] secret [ccna]``|
+| `CDevice#show ip ssh``|Use it to verify that the switch supports SSH
+| `CDevice(config)#ip domain-name [domain-name]``|
+| `CDevice(config)#crypto key generate rsa general-keys modulus 4096``| Generate an RSA crypto key using 4096 bits modulus
+| `CDevice(config)#username [admin] secret [ccna]``|
 | `CDevice(config)#username user secret cisco` | Create user 'user' with password 'cisco'
 | `CDevice(config)#line vty 0 15`<br>`CDevice(config-line)#login local`<br>`CDevice(config-line)#transport input ssh`  | Configure the vty lines to accept SSH access only
-| `S1(config-line)#exit``|
-| `S1(config)#ip ssh version 2``|enable SSH version 2
-| `S1(config)#crypto key zeroise rsa``|:warning: use to **delete** RSA key pair
+| `CDevice(config-line)#exit``|
+| `CDevice(config)##ip ssh version 2``|enable SSH version 2
+| `CDevice(config)##crypto key zeroise rsa``|:warning: use to **delete** RSA key pair
 
 ### Modifying SSH configuration
 Command|Description
 ---|---
-| `S1(config)#ip ssh time-out [time]``|Change timeout setting (time in seconds)
-| `S1(config)#ip ssh authentication-retries [retries]``|Change number of allowed authentication attempts
+| `CDevice(config)##ip ssh time-out [time]``|Change timeout setting (time in seconds)
+| `CDevice(config)##ip ssh authentication-retries [retries]``|Change number of allowed authentication attempts
 
 Verify your newly configured settings with ``S1#show ip ssh``
 
