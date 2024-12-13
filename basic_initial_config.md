@@ -45,8 +45,8 @@ Command|Description
 ### Modifying SSH configuration
 Command|Description
 ---|---
-| `CDevice(config)##ip ssh time-out [time]``|Change timeout setting (time in seconds)
-| `CDevice(config)##ip ssh authentication-retries [retries]``|Change number of allowed authentication attempts
+| `CDevice(config)##ip ssh time-out [time]`|Change timeout setting (time in seconds)
+| `CDevice(config)##ip ssh authentication-retries [retries]`|Change number of allowed authentication attempts
 
 Verify your newly configured settings with ``S1#show ip ssh``
 
