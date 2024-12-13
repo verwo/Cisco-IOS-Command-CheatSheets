@@ -21,7 +21,7 @@ Command|Additional Notes
 ``CDevice#copy running-config startup-config``|Saves the running configuration to the NVRAM
 
 
-# Security settings
+## Security settings
 
 | Command                           | Additional Notes                                              |
 |-----------------------------------|-------------------------------------------------------------|
