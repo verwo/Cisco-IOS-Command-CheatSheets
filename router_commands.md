@@ -133,8 +133,9 @@ Command|Description
 ``R1(config-router)#router-id [a.b.c.d]``|manually assign the router an ID, in an IPv4 address format.
 ``R1(config-if)#ip ospf priority [nr]``| The priority can be configured to be any number between 0 – 255.<br> If the interface priority value is set to 0, that interface cannot be elected as DR nor BDR.<br> The default priority of multiaccess broadcast interfaces is 1.
 ``R1(config-router)#passive-interface [interface]``|prevent the transmission of routing messages through a router interface,<br> but still allow that network to be advertised to other routers
-``R1(config-if)#ip ospf hello-interval [nr]``| 
-``R1(config-if)#ip ospf dead-interval [nr]``| 
+``R1(config-if)#ip ospf hello-interval [nr]``| Default 40 seconds on multiaccess and point-to-point networks.
+``R1(config-if)#ip ospf dead-interval [nr]``| Default 10 seconds on multiaccess and point-to-point networks.
+
 
 :bulb: The routers in the network elect the router with the highest interface priority as the DR. The router with the second highest interface priority is becomes the BDR.  If the interface priorities are equal, then the router with the highest router ID is elected the DR. The router with the second highest router ID is the BDR.
 
