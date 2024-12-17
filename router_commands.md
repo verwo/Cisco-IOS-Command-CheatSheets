@@ -125,7 +125,7 @@ Command|Description
 
 Command|Description
 ---|---
-``R1(config-if)#ip ospf [process-id] area [area-id]
+``R1(config-if)#ip ospf [process-id] area [area-id]``|
 
 :bulb: The ``area id`` can also be expressed in IP address format, hence the range of available ``area id``s.
 
