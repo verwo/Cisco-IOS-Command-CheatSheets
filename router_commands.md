@@ -131,10 +131,12 @@ Command|Description
 Command|Description
 ---|---
 ``R1(config-router)#router-id [a.b.c.d]``|manually assign the router an ID, in an IPv4 address format.
-``R1(config-if)#ip ospf priority [nr]``| The priority can be configured to be any number between 0 – 255. If the interface priority value is set to 0, that interface cannot be elected as DR nor BDR. The default priority of multiaccess broadcast interfaces is 1.
-``R1(config-router)#passive-interface [interface]``|prevent the transmission of routing messages through a router interface, but still allow that network to be advertised to other routers
+``R1(config-if)#ip ospf priority [nr]``| The priority can be configured to be any number between 0 – 255.'<br>' If the interface priority value is set to 0, that interface cannot be elected as DR nor BDR.'<br>' The default priority of multiaccess broadcast interfaces is 1.
+``R1(config-router)#passive-interface [interface]``|prevent the transmission of routing messages through a router interface,'<br>' but still allow that network to be advertised to other routers
 ``R1(config-if)#ip ospf hello-interval [nr]``| 
 ``R1(config-if)#ip ospf dead-interval [nr]``| 
+
+:bulb: The routers in the network elect the router with the highest interface priority as the DR. The router with the second highest interface priority is becomes the BDR.  If the interface priorities are equal, then the router with the highest router ID is elected the DR. The router with the second highest router ID is the BDR.
 
 :bulb: The ``area id`` can also be expressed in IP address format, hence the range of available ``area id``s.
 
@@ -143,9 +145,6 @@ Issue the ``R1(config)#do show ip route con`` command.
 It will display the routing table ONLY with the directly connected networks (routes).
 
 >:trophy: **Best practice:** OSPF routers **within an area** use **and need unique IDs** to identify themselves. It is highly convenient to manually set a desired router ID with the ``router-id`` command.
-The routers in the network elect the router with the highest interface priority as the DR. The router with the second highest interface priority is becomes the BDR.  If the interface priorities are equal, then the router with the highest router ID is elected the DR. The router with the second highest router ID is the BDR.
-
-
 
 
 ### OSPF verification
