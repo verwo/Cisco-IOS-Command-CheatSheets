@@ -131,8 +131,8 @@ Command|Description
 Command|Description
 ---|---
 ``R1(config-router)#router-id [a.b.c.d]``|manually assign the router an ID, in an IPv4 address format.
-``R1(config-if)#ip ospf priority [nr]``| The priority can be configured to be any number between 0 – 255.'<br>' If the interface priority value is set to 0, that interface cannot be elected as DR nor BDR.'<br>' The default priority of multiaccess broadcast interfaces is 1.
-``R1(config-router)#passive-interface [interface]``|prevent the transmission of routing messages through a router interface,'<br>' but still allow that network to be advertised to other routers
+``R1(config-if)#ip ospf priority [nr]``| The priority can be configured to be any number between 0 – 255.<br> If the interface priority value is set to 0, that interface cannot be elected as DR nor BDR.<br> The default priority of multiaccess broadcast interfaces is 1.
+``R1(config-router)#passive-interface [interface]``|prevent the transmission of routing messages through a router interface,<br> but still allow that network to be advertised to other routers
 ``R1(config-if)#ip ospf hello-interval [nr]``| 
 ``R1(config-if)#ip ospf dead-interval [nr]``| 
 
