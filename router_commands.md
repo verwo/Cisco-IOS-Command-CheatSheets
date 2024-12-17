@@ -118,14 +118,23 @@ Static routes are all configured in **global configuration mode**, with the ``ip
 Command|Description
 ---|---
 ``R1(config)#router ospf [PID]``|create OSPF process with Process ID [PID] (1 - 65535)
-``R1(config-router)#router-id [a.b.c.d]``|manually assign the router an ID, in an IPv4 address format.
-``R1(config-router)#network [network-address] [wildcard-mask] area [area id]``|for all directly connected networks, announce each network following this nomenclature. Area ID can go from 0 to 4294967295
+``R1(config-router)#network [network-address] [wildcard-mask] area [area id]``| Activate OSPF using network statements and inverse masks 
 
 ### Configure OSPF directly on the interface
 
 Command|Description
 ---|---
-``R1(config-if)#ip ospf [process-id] area [area-id]``|
+``R1(config-if)#ip ospf [process-id] area [area-id]``|Activate OSPF by configuring the interface
+
+### OSPF tweaking
+
+Command|Description
+---|---
+``R1(config-router)#router-id [a.b.c.d]``|manually assign the router an ID, in an IPv4 address format.
+``R1(config-if)#ip ospf priority [nr]``| 
+``R1(config-router)#passive-interface [interface]``|prevent the transmission of routing messages through a router interface, but still allow that network to be advertised to other routers
+``R1(config-if)#ip ospf hello-interval [nr]``| 
+``R1(config-if)#ip ospf dead-interval [nr]``| 
 
 :bulb: The ``area id`` can also be expressed in IP address format, hence the range of available ``area id``s.
 
