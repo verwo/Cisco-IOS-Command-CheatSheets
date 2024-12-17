@@ -113,11 +113,16 @@ Static routes are all configured in **global configuration mode**, with the ``ip
 ---
 ## Dynamic routing: OSPF
 
-### Configure OSPF Using the network Command
+### Configure OSPF
 
 Command|Description
 ---|---
 ``R1(config)#router ospf [PID]``|create OSPF process with Process ID [PID] (1 - 65535)
+
+### Configure OSPF Using the network Command
+
+Command|Description
+---|---
 ``R1(config-router)#network [network-address] [wildcard-mask] area [area id]``| Activate OSPF using network statements and inverse masks 
 
 ### Configure OSPF directly on the interface
