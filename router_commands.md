@@ -113,12 +113,19 @@ Static routes are all configured in **global configuration mode**, with the ``ip
 ---
 ## Dynamic routing: OSPF
 
-### OSPF configuration
+### Configure OSPF Using the network Command
+
 Command|Description
 ---|---
 ``R1(config)#router ospf [PID]``|create OSPF process with Process ID [PID] (1 - 65535)
 ``R1(config-router)#router-id [a.b.c.d]``|manually assign the router an ID, in an IPv4 address format.
 ``R1(config-router)#network [network-address] [wildcard-mask] area [area id]``|for all directly connected networks, announce each network following this nomenclature. Area ID can go from 0 to 4294967295
+
+### Configure OSPF directly on the interface
+
+Command|Description
+---|---
+``R1(config-if)#ip ospf [process-id] area [area-id]
 
 :bulb: The ``area id`` can also be expressed in IP address format, hence the range of available ``area id``s.
 
