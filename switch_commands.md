@@ -230,7 +230,14 @@ Command|Description
 * Shut the interface down using ``S1(config-if)#shutdown``.
 * Bring the interface back up using ``S1(config-if)#no shutdown``.
 
-
+---
+## DHCP Snooping
+Command|Description
+---|---
+``S1(config)#ip dhcp snooping [vlan] ``|Enable DHCP snooping globally
+``S1(config)# ip dhcp snooping ``|Enable DHCP snooping globally
+``S1(config-if)#ip dhcp snooping trust ``|On trusted ports
+``S1(config-if)#ip dhcp snooping limit [rate packets-per-second] ``|On untrusted interfaces, limit the number of DHCP discovery messages that can be received
 
 ---
 ## VLAN trunking protocol (VTP)
