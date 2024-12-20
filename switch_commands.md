@@ -236,7 +236,7 @@ Command|Description
 Command|Description
 ---|---
 ``S1(config)#ip dhcp snooping``|Enable DHCP snooping globally
-``S1(config)# ip dhcp snooping [vlan] ``|Enable DHCP snooping by VLAN, or by a range of VLANs
+``S1(config)#ip dhcp snooping [vlan] ``|Enable DHCP snooping by VLAN, or by a range of VLANs
 ``S1(config-if)#ip dhcp snooping trust ``|On trusted ports
 ``S1(config-if)#ip dhcp snooping limit [rate packets-per-second] ``|On untrusted interfaces, limit the number of DHCP discovery messages that can be received
 
