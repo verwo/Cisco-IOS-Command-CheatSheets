@@ -21,6 +21,7 @@
     - [Configuring Sticky Port Security](#closed_lock_with_key-configuring-sticky-port-security)
     - [Verifying Port Security & secure MAC addresses](#closed_lock_with_key-white_check_mark-verifying-port-security-&-secure-mac-addresses)
         - [``Err-disabled`` interfaces](#bringing-an-err-disabled-interface-back-up)
+- [DHCP spoofing](#DHCP-Snooping)
 - [VLAN management with VTP](#VLAN-trunking-protocol-VTP)
     - [VTP verification](#VTP-verification)
 - [STP](#Spanning-Tree-Protocol)
@@ -234,8 +235,8 @@ Command|Description
 ## DHCP Snooping
 Command|Description
 ---|---
-``S1(config)#ip dhcp snooping [vlan] ``|Enable DHCP snooping globally
-``S1(config)# ip dhcp snooping ``|Enable DHCP snooping globally
+``S1(config)#ip dhcp snooping``|Enable DHCP snooping globally
+``S1(config)# ip dhcp snooping [vlan] ``|Enable DHCP snooping by VLAN, or by a range of VLANs
 ``S1(config-if)#ip dhcp snooping trust ``|On trusted ports
 ``S1(config-if)#ip dhcp snooping limit [rate packets-per-second] ``|On untrusted interfaces, limit the number of DHCP discovery messages that can be received
 
