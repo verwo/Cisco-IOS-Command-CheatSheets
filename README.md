@@ -16,7 +16,7 @@ Commands are organized by topic,
 
 ---
 ## Feel free to begin exploring!
-
+- [Basic commands](https://github.com/verwo/Cisco-IOS-Command-CheatSheets/blob/master/basic_initial_config.md)
 - [Router commands](https://github.com/r7perezyera/Cisco-IOS-Command-CheatSheets/blob/master/router_commands.md)
 - [Switch commands](https://github.com/r7perezyera/Cisco-IOS-Command-CheatSheets/blob/master/switch_commands.md)
 
